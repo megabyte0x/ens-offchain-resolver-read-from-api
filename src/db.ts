@@ -44,7 +44,7 @@ export const database: Database = {
 async function fetchOffchainName(name: string): Promise<NameData> {
   try {
     const response = await fetch(
-      `https://ens-gateway.gregskril.workers.dev/get/${name}`
+      `https://ens.yash-garg.workers.dev/get/${name}`
     );
 
     const data = (await response.json()) as NameData;
